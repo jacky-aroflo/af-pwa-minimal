@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AroFlo PWA Example</title>
+	<link rel="manifest" href="/manifest.json">
+	<link type="text/css" rel="stylesheet" href="./src/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="./src/style.css">
+	<script src="./src/vue.global.js"></script>
+	<script src="./src/bootstrap.bundle.min.js"></script>
+	<script src="./src/tsparticles.confetti.bundle.min.js"></script>
+	<script src="./src/toDo.js"></script>
+	<script src="./src/slides.js"></script>
+	<script src="./src/main.js" defer></script>
+</head>
+
+<body>
+	<div id="afApp"></div>
+</body>
+
+<script>
+	// Register the service worker
+	if ('serviceWorker' in navigator) {
+		window.addEventListener('load', () => {
+			navigator.serviceWorker.register('./ServiceWorker.js')
+				.then(reg => { }).catch(err => {
+					console.error('Service Worker registration failed:', err);
+				});
+		}
+</script>
+
+</html>

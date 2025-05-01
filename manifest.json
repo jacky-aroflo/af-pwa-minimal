@@ -1,0 +1,30 @@
+{
+	"short_name": "AF PWA",
+	"name": "AroFlo PWA Minimal App",
+	"description": "AroFlo PWA Minimal App for In-Service",
+	"icons": [
+		{
+			"src": "/favicon.ico",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "/src/android-chrome-144x144.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		},
+		{
+			"src": "/src/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/src/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/",
+	"theme_color": "#383749",
+	"background_color": "#FFFFFF",
+	"display": "standalone"
+}
